@@ -15,16 +15,16 @@ int police(string s);
 bool is_a(char a);
 
 int main()
-{
-	string s;
-	cout << "Enter a string: ";
+{                            
+	string s;                 
+	cout << "Enter a string: ";   // asks user to input a string.
 	cin >> s;
     cout <<"there are " << police(s) <<" many 'a's in your input"  << endl;
-
+//prints how many a's in there.
     return 0;
 }
 
-int police(string s)
+int police(string s)    //function for to find a characters.
 {
     int count = 0;
     int n = s.length();
@@ -42,7 +42,7 @@ int police(string s)
 }
  
 
-bool is_a( char a)
+bool is_a( char a)   // it is a checker for if statement in police function.
 {
     return a == 'a' || a == 'A';
 }
